@@ -969,10 +969,12 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
     .video-container2 {
     width: 100%;
 }
+
 }
 
 .video-container2 {
     width: 80%;
+    height: auto;
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -983,7 +985,7 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 /* Container Reset */
@@ -992,7 +994,7 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
     background: linear-gradient(to bottom right, rgba(8, 76, 88, 0.05), rgba(6, 58, 68, 0.03));
     margin: 3rem auto;
     padding: 3rem 2rem;
-    border-radius: 48px;
+    border-radius: 100px;
     overflow: hidden;
 }
 
@@ -1236,7 +1238,7 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
     .medium-wide, .large-vertical {
         grid-column: span 1;
         grid-row: span 1;
-        background-size: 30%; /* Make images smaller */
+        background-size: 30%; 
     }
 }
 
@@ -1244,7 +1246,7 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
 @media (max-width: 600px) {
     .my-box {
         padding: 2rem 0;
-        border-radius: 0; /* Full width looks better on mobile */
+        border-radius: 0;
     }
     .features-grid {
         grid-template-columns: 1fr;
@@ -1253,7 +1255,7 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
     .medium-wide, .large-vertical {
         grid-column: span 1;
         grid-row: span 1;
-        background-image: none; /* Hide heavy images on small mobile for text clarity */
+        background-image: none;
     }
     .feature-card {
         padding: 20px;
