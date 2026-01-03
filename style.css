@@ -130,8 +130,8 @@ body {
 .header-start:hover {
     background-color: #084c58;
     color: #ffffff;
-    transform: scale(1.05); /* hover:scale-105 */
-    box-shadow: 0 0 30px #084c58; /* hover:shadow-[0_0_30px_#084c58] */
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #084c58;
 }
 
 .nav-link a:has(.header-start):hover .header-start {

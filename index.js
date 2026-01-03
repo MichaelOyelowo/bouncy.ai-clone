@@ -23,12 +23,20 @@ const menuToggle = document.getElementById('menu-toggle');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "10px 20px";
-        document.getElementById("navbar").style.width = "70%";
+    // Only run this logic if the screen is wider than 1024px
+    if (window.innerWidth > 1024) {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "10px 20px";
+            document.getElementById("navbar").style.width = "70%";
+        } else {
+            document.getElementById("navbar").style.padding = "15px 40px";
+            document.getElementById("navbar").style.width = "80%";
+        }
     } else {
-        document.getElementById("navbar").style.padding = "15px 40px";
-        document.getElementById("navbar").style.width = "80%"
+        // Optional: Reset mobile styles to ensure they don't get stuck 
+        // if someone resizes their browser window.
+        document.getElementById("navbar").style.padding = ""; 
+        document.getElementById("navbar").style.width = "";
     }
 }
 
