@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+<nav class="nav-desktop" id="navbar">
+        <div class="bouncy-logo" id="logo">
+            <a href="index.html"><img src="./images/image.png" alt="logos" width="120" height="auto"></a>
+        </div>
+    <!-- The Menu Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            <svg class="hamburger" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="30">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="30" style="display:none;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+
+        <div class="nav-link">
+            <a href="index.html">Home</a>
+            <a href="#term">Term</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#">
+                <button type="button" class="header-start">Start Free
+                    <div class="shine-effect"></div>
+                </button>
+            </a>
+        </div>
+</nav>
+<!-- Mobile sliding menu (from top) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="menu-content">
+        <div class="mobile-menu-links">
+            <a href="index.html">Home</a>
+            <a href="#term">Term</a>
+            <a href="#privacy">Privacy</a>
+
+            <!-- Action Button -->
+            <a href="https://app.bouncy.ai" class="start-button">
+                <span>Start Free</span>
+                <div class="shine-effect"></div>
+            </a>
+        </div>  
+    </div>
+  </div>
+
+<div class="contact-hero">
+    <div class="contact-hero-content">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-subtitle">We're here to help</p>
+    </div>
+</div>
+
+
+<section class="contact-grid">
+    <!-- Part 1: Contact Information (Left Column) -->
+    <aside class="contact-info-card">
+        <h2>Contact Information</h2>
+        <p class="description">Fill out the form and our team will get back to you within 24 hours.</p>
+
+        <div class="info-list">
+            <div class="info-item">
+                <div class="icon-box">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-5 h-5" height="1.25rem" width="1.25rem" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                </div>
+                <div class="text">
+                    <span class="label">Email</span>
+                    <span class="value">support@bouncy.ai</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon-box">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-5 h-5" height="1.25rem" width="1.25rem" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="text">
+                    <p class="label">Live Chat</p>
+                    <p class="value">12PM-12AM UK Time</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon-box">
+                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-5 h-5" height="1.25rem" width="1.25rem" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                </svg>
+                </div>
+                <div class="text">
+                    <p class="label">Location</p>
+                    <p class="value">Manchester, United Kingdom</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-section" style="margin-top: 2rem;padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+            <p class="label">Follow us</p>
+            <div class="social-links">
+                <a href="#" class="social-btn ig-hover">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-btn tt-hover">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-btn tg-hover">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-btn li-hover">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="onboarding-cta" style="margin-top: 2rem;padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+            <p style="opacity: 0.75;font-size:0.875rem;line-height:1.25rem;margin-bottom:2rem;">Book an onboarding call</p>
+            <a href="https://calendly.com/bouncy/30min" target="_blank" class="btn-calendly">
+                <span class="btn-inner">
+                    <svg class="calendar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    Schedule 30-Min Call
+                </span>
+                <div class="shine-effect"></div>
+            </a>
+            <p class="footnote">Free consultation • No obligation</p>
+        </div>
+    </aside>
+
+    <!-- Part 2: Contact Form (Right Column) -->
+    <main class="contact-form-card">
+        <div class="form-header">
+            <h2>Send us a message</h2>
+            <p style="color: #4b5563;">We'd love to hear from you. Fill out the form below...</p>
+        </div>
+
+        <form class="contact-form">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="your@email.com" required>  
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" placeholder="What is this all about?" required>
+            </div>
+            <!-- Add Email and Subject input-groups here -->
+            <div class="input-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                <p class="field-hint">Please provide as much detail as possible</p>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                <span class="btn-label">Send Message</span>
+                <div class="btn-shine"></div>
+            </button>
+        </form>
+    </main>
+</section>
+
+
+
+
+<section id="faq">
+    <section>
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Frequently Asked <span style="color: #084c58;">Questions</span></h2>
+                <p>Everything you need to know about Bouncy</p>
+            </div>
+            <div class="faq-grid">
+                <!-- FAQ items 1 -->
+                <div class="faq-card" id="faq1">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq1')">
+                            <span>What is Bouncy and how does it work?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Bouncy is a smart link tool that automatically redirects users from in-app browsers to their default browser, enabling password autofill and easy payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 2 -->
+                <div class="faq-card" id="faq2">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq2')">
+                            <span>Which platforms does Bouncy work with?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Works with Instagram, Facebook, Snapchat, Twitter/X, Telegram, Discord, LinkedIn, Reddit, and most
+                                     other social platforms that use in-app browsers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 3 -->
+                <div class="faq-card" id="faq3">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq3')">
+                            <span>How much will my conversions improve?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>On average, users see 47% better login rates and 68% better checkout completion. 
+                                    Some stores report up to 3x better conversion rates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 4 -->
+                <div class="faq-card" id="faq4">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq4')">
+                            <span>Do I need technical skills to use Bouncy?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Not at all! Bouncy takes just 30 seconds to set up. No coding, no complex configuration
+                                     - just create your link and add it to your bio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 5 -->
+                <div class="faq-card" id="faq5">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq5')">
+                            <span>Can I use my own custom domain?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Yes! You can connect your own domain to maintain your brand identity. 
+                                    We also offer 30+ premium system domains to choose from.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 6 -->
+                <div class="faq-card" id="faq6">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq6')">
+                            <span>Is Bouncy safe for my customers?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Absolutely. Bouncy simply redirects users to their own trusted browser. 
+                                    We don't store passwords, payment info, or any sensitive data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 7 -->
+                <div class="faq-card" id="faq7">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq7')">
+                            <span>What analytics do I get with Bouncy?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Detailed real-time analytics including clicks, conversions, device types, geographic data, 
+                                    and revenue tracking to see exactly how much you're recovering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 8 -->
+                <div class="faq-card" id="faq8">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq8')">
+                            <span>Does Bouncy work on all devices?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Yes! Bouncy works seamlessly on mobile and desktop. 
+                                    Mobile users get redirected from in-app browsers, desktop users go straight through.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <p style="margin-top: 2rem; margin-bottom: 1rem;color: #4b5563;">Still have questions?</p>
+                <div class="faq-btn-container">
+                    <a href="https://app.bouncy.ai" class="btn-action btn-primary">
+                        <span class="btn-text">Get Started →</span>
+                        <div class="btn-shine"></div>
+                    </a>
+
+                    <!-- Secondary Button (White Glass) -->
+                    <a href="https://help.bouncy.ai" target="_blank" class="btn-action btn-secondary">
+                        <span class="btn-text">Contact Support</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer class="main-footer">
+    <!-- Curved Wave Top -->
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="footer-wave" width="1rem" height="1rem">
+        <path d="M0,0 L0,27.35 A600.21,600.21,0,0,0,321.39,56.44 c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39 C823.78,31,906.67,72,985.66,92.83 c70.05,18.48,146.53,26.09,214.34,3 L1200,0 Z" fill="white"></path>
+    </svg>
+
+    <div class="footer-container">
+        <!-- Logo & Tagline -->
+        <div class="footer-brand">
+            <img src="https://media.bouncy.ai/BouncyLogoWhite.png" alt="Bouncy" class="footer-logo">
+            <p class="tagline">Stop losing sales. Start converting.</p>
+        </div>
+
+        <!-- Links Grid -->
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a target="_blank" href="https://app.bouncy.ai">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/affiliates">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a target="_blank" href="https://help.bouncy.ai">Help Center</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-group">
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-instagram"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-tiktok"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-telegram"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <p class="community-text">Join our community</p>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="footer-cta">
+            <h3>Ready to stop losing 70% of your sales?</h3>
+            <p>Join thousands of businesses recovering lost revenue with Bouncy</p>
+            <a target="_blank" href="https://app.bouncy.ai" class="btn-glass">
+                <span class="btn-content">Get Started →</span>
+                <div class="shine"></div>
+            </a>
+        </div>
+
+        <!-- Copyright & Legal -->
+        <div class="footer-bottom">
+            <div class="legal-info">
+                <span>© 2026 Bouncy.ai</span>
+                <span class="dot">•</span>
+                <span>Smart Links That Convert</span>
+            </div>
+            <div class="footer-legal-links">
+                <a href="/terms">Terms</a>
+                <a href="/privacy">Privacy</a>
+                <a target="_blank" href="https://help.bouncy.ai">Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/695826701967351981b5f96d/1je05cau4';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script src="/bounty web-page/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>

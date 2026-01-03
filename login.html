@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-container">
+            <header class="login-header">
+                <h1 class="login-logo">Bouncy</h1>
+                <p class="welcome-text">Welcome back</p>
+            </header>
+            <form action="" class="login-form">
+                    <input type="email" id="email" placeholder="Email" required class="login-input">
+                    <input type="password" id="password" placeholder="Password" required class="login-input">
+
+                <button type="submit" class="btn-white">Log in</button>
+
+                <div class="separator">
+                    <span>OR</span>
+                </div>
+
+                <button type="button" class="btn-google btn-white" id="btnGoogle">
+                    <img src="./images/google-icon.svg" alt="Google">
+                    Continue with Google
+                </button>
+            </form>
+            <p class="auth-links">
+                <a href="/forgot-password" class="blue-link">Forgot Password?</a> 
+                <span class="divider">|</span> 
+                Don't have an account? <a href="/register" class="blue-link">Sign Up</a>
+            </p>
+            <p class="legal-text">
+                By continuing, you agree to our 
+                <a href="/terms">Terms & Conditions</a> and 
+                <a href="/privacy">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

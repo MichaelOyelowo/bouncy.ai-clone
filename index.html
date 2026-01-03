@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+<nav class="nav-desktop" id="navbar">
+        <div class="bouncy-logo" id="logo">
+            <a href="index.html"><img src="./images/image.png" alt="logos" width="120" height="auto"></a>
+        </div>
+    <!-- The Menu Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            <svg class="hamburger" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="30">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="30" style="display:none;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+
+        <div class="nav-link">
+            <a href="#how-it-works">How It Works</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <button class="header-start" onclick="window.location.href='login.html'">Start Free
+                <div class="shine-effect"></div>
+            </button>
+        </div>
+</nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <!-- Mobile sliding menu (from top) -->
+    <div class="menu-content">
+        <div class="mobile-menu-links">
+            <a href="#how-it-works" class="menu-link">How It Works</a>
+            <a href="#benefits" class="menu-link">Benefits</a>
+            <a href="#pricing" class="menu-link">Pricing</a>
+            <a href="#faq" class="menu-link">FAQ</a>
+            <a href="contact.html" class="menu-link">Contact</a>
+
+            <!-- Action Button -->
+            <a href="login.html" class="start-button">
+                <span>Start Free</span>
+                <div class="shine-effect"></div>
+            </a>
+        </div>  
+    </div>
+  </div>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="hero-shrink reveal">
+            <h1> <b>Stop Losing Clicks,</b> <br><span class="highlight"><b>Start Bouncing</b></span> </h1>
+            <p>Bouncy is a smart deep linking solution that <strong>automatically redirects users from in-app browsers
+            to</strong> their default browser, recovering up to 70% of lost traffic.</p>
+            <!-- Typewriter Area -->
+            <div class="domain-container reveal">
+                <div id="typewriter" class="domain-box"></div>
+                <div class="domain-note">30+ Bouncy domains or use your own!</div>
+            </div>
+        </div>
+            <div class="cta-buttons">
+                <a href="https://app.bouncy.ai" class="btn-try-free">
+                    <span class="btn-text">Try Bouncy Free →</span>
+                    <div class="shine-overlay"></div>
+                </a>
+                <a href="#how-it-works" class="btn-secondary-glass">
+                    <span class="btn-text">See How It Works</span>
+                    <div class="shine-teal"></div>
+                </a>
+            </div>
+            <div class="scroll-explore">
+                <span>Scroll to explore</span>
+                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="video-container reveal">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="./images/bouncy speed test .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>  
+            <div class="social-icons .reveal">
+            <img class="instagram" width="20" height="20" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
+            <img class="threads" width="20" height="20" src="https://img.icons8.com/ios/50/threads.png" alt="threads"/>
+            <img class="snapchat" width="20" height="20" src="https://img.icons8.com/ios/50/snapchat.png" alt="snapchat"/>
+            <svg class="facebook" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30">
+            <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
+            </svg>
+            <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30">
+            <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+            </svg>
+            <svg class="telegram" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+            <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"></path>
+            </svg>
+            <img class="discord" width="20" height="20" src="https://img.icons8.com/ios-filled/50/discord-logo.png" alt="discord-logo"/>
+            <svg class="wechat" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+            <path d="M 19 6 C 9.625 6 2 12.503906 2 20.5 C 2 24.769531 4.058594 28.609375 7.816406 31.390625 L 5.179688 39.304688 L 13.425781 34.199219 C 15.714844 34.917969 18.507813 35.171875 21.203125 34.875 C 23.390625 39.109375 28.332031 42 34 42 C 35.722656 42 37.316406 41.675781 38.796875 41.234375 L 45.644531 45.066406 L 43.734375 38.515625 C 46.3125 36.375 48 33.394531 48 30 C 48 23.789063 42.597656 18.835938 35.75 18.105469 C 34.40625 11.152344 27.367188 6 19 6 Z M 13 14 C 14.101563 14 15 14.898438 15 16 C 15 17.101563 14.101563 18 13 18 C 11.898438 18 11 17.101563 11 16 C 11 14.898438 11.898438 14 13 14 Z M 25 14 C 26.101563 14 27 14.898438 27 16 C 27 17.101563 26.101563 18 25 18 C 23.898438 18 23 17.101563 23 16 C 23 14.898438 23.898438 14 25 14 Z M 34 20 C 40.746094 20 46 24.535156 46 30 C 46 32.957031 44.492188 35.550781 42.003906 37.394531 L 41.445313 37.8125 L 42.355469 40.933594 L 39.105469 39.109375 L 38.683594 39.25 C 37.285156 39.71875 35.6875 40 34 40 C 27.253906 40 22 35.464844 22 30 C 22 24.535156 27.253906 20 34 20 Z M 29.5 26 C 28.699219 26 28 26.699219 28 27.5 C 28 28.300781 28.699219 29 29.5 29 C 30.300781 29 31 28.300781 31 27.5 C 31 26.699219 30.300781 26 29.5 26 Z M 38.5 26 C 37.699219 26 37 26.699219 37 27.5 C 37 28.300781 37.699219 29 38.5 29 C 39.300781 29 40 28.300781 40 27.5 C 40 26.699219 39.300781 26 38.5 26 Z"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section id="how-it-works" style="padding: 100px 0;">
+    <div class="section-label reveal">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-6 h-6 text-[#084c58]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M208 512a24.84 24.84 0 0 1-23.34-16l-39.84-103.6a16.06 16.06 0 0 0-9.19-9.19L32 343.34a25 25 0 0 1 0-46.68l103.6-39.84a16.06 16.06 0 0 0 9.19-9.19L184.66 144a25 25 0 0 1 46.68 0l39.84 103.6a16.06 16.06 0 0 0 9.19 9.19l103 39.63a25.49 25.49 0 0 1 16.63 24.1 24.82 24.82 0 0 1-16 22.82l-103.6 39.84a16.06 16.06 0 0 0-9.19 9.19L231.34 496A24.84 24.84 0 0 1 208 512zm66.85-254.84zM88 176a14.67 14.67 0 0 1-13.69-9.4l-16.86-43.84a7.28 7.28 0 0 0-4.21-4.21L9.4 101.69a14.67 14.67 0 0 1 0-27.38l43.84-16.86a7.31 7.31 0 0 0 4.21-4.21L74.16 9.79A15 15 0 0 1 86.23.11a14.67 14.67 0 0 1 15.46 9.29l16.86 43.84a7.31 7.31 0 0 0 4.21 4.21l43.84 16.86a14.67 14.67 0 0 1 0 27.38l-43.84 16.86a7.28 7.28 0 0 0-4.21 4.21l-16.86 43.84A14.67 14.67 0 0 1 88 176zm312 80a16 16 0 0 1-14.93-10.26l-22.84-59.37a8 8 0 0 0-4.6-4.6l-59.37-22.84a16 16 0 0 1 0-29.86l59.37-22.84a8 8 0 0 0 4.6-4.6l22.67-58.95a16.45 16.45 0 0 1 13.17-10.57 16 16 0 0 1 16.86 10.15l22.84 59.37a8 8 0 0 0 4.6 4.6l59.37 22.84a16 16 0 0 1 0 29.86l-59.37 22.84a8 8 0 0 0-4.6 4.6l-22.84 59.37A16 16 0 0 1 400 256z">
+        </path></svg>
+        Simple Process
+    </div>
+    <h2 class="section-title section-heading">How <span class="bouncy-wrapper">
+        <svg viewBox="0 0 200 70">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Bouncy
+            </text>
+        </svg>
+    </span>  Works</h2>
+    <p class="section-subtitle">Transform your social media links into high-converting traffic in seconds</p>
+
+<!-- Steps Container -->
+<div class="steps-container reveal">
+    <!-- Step 1 -->
+    <div class="step-card">
+        <div class="step-number step-blue">1</div>
+        <div class="step-icon step-icon-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+            </svg>
+        </div>
+        <h3 class="step-title">User Clicks Link</h3>
+        <p class="step-description">Someone taps your link in Instagram, TikTok, or any social app</p>
+        <div class="step-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+            </svg>
+            Opens in limited in-app browser
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-card reveal">
+        <div class="step-number step-teal">2</div>
+        <div class="step-icon step-icon-teal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            </svg>
+        </div>
+        <h3 class="step-title">Bouncy Magic</h3>
+        <p class="step-description">Instantly redirects to their real browser (Chrome, Safari, etc.)</p>
+        <div class="step-badge step-badge-warning">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            </svg>
+            0.3s redirect time
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-card reveal">
+        <div class="step-number step-gray">3</div>
+        <div class="step-icon step-icon-gray">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+            </svg>
+        </div>
+        <h3 class="step-title">Better Conversions</h3>
+        <p class="step-description">Full browser features mean working checkouts & logins</p>
+        <div class="step-badge step-badge-success">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            +47% conversion rate
+        </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step-card reveal">
+        <div class="step-number step-green">4</div>
+        <div class="step-icon step-icon-green">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+            </svg>
+        </div>
+        <h3 class="step-title">Increased Revenue</h3>
+        <p class="step-description">More sales = more money in your pocket</p>
+        <div class="step-badge step-badge-money">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Higher ROI guaranteed
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="video-container2 reveal">
+    <video class="hero-video" controls loop muted playsinline>
+        <source src="./images/home.bouncy.ai Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<section>
+<div class="my-box">
+    <div class="my-box-container reveal">
+        <div class="real-page reveal">
+            <h1>Real Browsers = <span>Real Features</span></h1>
+            <p>In-app browsers block these essential features. Bouncy brings them all back.</p>
+        </div>
+
+        <div class="features-grid reveal">
+            <!-- Card 1 -->
+            <div class="feature-card small reveal">
+                <div class="card-header reveal">
+                    <span class="badge badge-teal reveal">CART RECOVERY</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(8, 76, 88);">
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>Cookie Support</h3>
+                <p>Shopping carts stay full and user sessions are remembered.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card small small-2 reveal">
+                <div class="card-header reveal">
+                    <span class="badge badge-teal reveal">UNIVERSAL</span>
+                </div>
+                <h3>Works Everywhere</h3>
+                <p>Support for all your favorite apps.</p>
+                <div class="social-mini-icons reveal">
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"></path>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M496.926,366.6c-3.373-9.176-9.8-14.086-17.112-18.153-1.376-.806-2.641-1.451-3.72-1.947-2.182-1.128-4.414-2.22-6.634-3.373-22.8-12.09-40.609-27.341-52.959-45.42a102.889,102.889,0,0,1-9.089-16.12c-1.054-3.013-1-4.724-.248-6.287a10.221,10.221,0,0,1,2.914-3.038c3.918-2.591,7.96-5.22,10.7-6.993,4.885-3.162,8.754-5.667,11.246-7.44,9.362-6.547,15.909-13.5,20-21.278a42.371,42.371,0,0,0,2.1-35.191c-6.2-16.318-21.613-26.449-40.287-26.449a55.543,55.543,0,0,0-11.718,1.24c-1.029.224-2.059.459-3.063.72.174-11.16-.074-22.94-1.066-34.534-3.522-40.758-17.794-62.123-32.674-79.16A130.167,130.167,0,0,0,332.1,36.443C309.515,23.547,283.91,17,256,17S202.6,23.547,180,36.443a129.735,129.735,0,0,0-33.281,26.783c-14.88,17.038-29.152,38.44-32.673,79.161-.992,11.594-1.24,23.435-1.079,34.533-1-.26-2.021-.5-3.051-.719a55.461,55.461,0,0,0-11.717-1.24c-18.687,0-34.125,10.131-40.3,26.449a42.423,42.423,0,0,0,2.046,35.228c4.105,7.774,10.652,14.731,20.014,21.278,2.48,1.736,6.361,4.24,11.246,7.44,2.641,1.711,6.5,4.216,10.28,6.72a11.054,11.054,0,0,1,3.3,3.311c.794,1.624.818,3.373-.36,6.6a102.02,102.02,0,0,1-8.94,15.785c-12.077,17.669-29.363,32.648-51.434,44.639C32.355,348.608,20.2,352.75,15.069,366.7c-3.868,10.528-1.339,22.506,8.494,32.6a49.137,49.137,0,0,0,12.4,9.387,134.337,134.337,0,0,0,30.342,12.139,20.024,20.024,0,0,1,6.126,2.741c3.583,3.137,3.075,7.861,7.849,14.78a34.468,34.468,0,0,0,8.977,9.127c10.019,6.919,21.278,7.353,33.207,7.811,10.776.41,22.989.881,36.939,5.481,5.778,1.91,11.78,5.605,18.736,9.92C194.842,480.951,217.707,495,255.973,495s61.292-14.123,78.118-24.428c6.907-4.24,12.872-7.9,18.489-9.758,13.949-4.613,26.163-5.072,36.939-5.481,11.928-.459,23.187-.893,33.206-7.812a34.584,34.584,0,0,0,10.218-11.16c3.434-5.84,3.348-9.919,6.572-12.771a18.971,18.971,0,0,1,5.753-2.629A134.893,134.893,0,0,0,476.02,408.71a48.344,48.344,0,0,0,13.019-10.193l.124-.149C498.389,388.5,500.708,376.867,496.926,366.6Zm-34.013,18.277c-20.745,11.458-34.533,10.23-45.259,17.137-9.114,5.865-3.72,18.513-10.342,23.076-8.134,5.617-32.177-.4-63.239,9.858-25.618,8.469-41.961,32.822-88.038,32.822s-62.036-24.3-88.076-32.884c-31-10.255-55.092-4.241-63.239-9.858-6.609-4.563-1.24-17.211-10.341-23.076-10.739-6.907-24.527-5.679-45.26-17.075-13.206-7.291-5.716-11.8-1.314-13.937,75.143-36.381,87.133-92.552,87.666-96.719.645-5.046,1.364-9.014-4.191-14.148-5.369-4.96-29.189-19.7-35.8-24.316-10.937-7.638-15.748-15.264-12.2-24.638,2.48-6.485,8.531-8.928,14.879-8.928a27.643,27.643,0,0,1,5.965.67c12,2.6,23.659,8.617,30.392,10.242a10.749,10.749,0,0,0,2.48.335c3.6,0,4.86-1.811,4.612-5.927-.768-13.132-2.628-38.725-.558-62.644,2.84-32.909,13.442-49.215,26.04-63.636,6.051-6.932,34.484-36.976,88.857-36.976s82.88,29.92,88.931,36.827c12.611,14.421,23.225,30.727,26.04,63.636,2.071,23.919.285,49.525-.558,62.644-.285,4.327,1.017,5.927,4.613,5.927a10.648,10.648,0,0,0,2.48-.335c6.745-1.624,18.4-7.638,30.4-10.242a27.641,27.641,0,0,1,5.964-.67c6.386,0,12.4,2.48,14.88,8.928,3.546,9.374-1.24,17-12.189,24.639-6.609,4.612-30.429,19.343-35.8,24.315-5.568,5.134-4.836,9.1-4.191,14.149.533,4.228,12.511,60.4,87.666,96.718C468.629,373.011,476.119,377.524,462.913,384.877Z"></path>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"></path>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="w-5 h-5 text-gray-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+            </svg>
+                </div>
+            </div>
+
+            <!-- Card 3: Large Vertical -->
+            <div class="feature-card large-vertical reveal">
+                <div class="card-header reveal">
+                    <span class="badge badge-green">LOGIN SUCCESS +47%</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(8, 76, 88);">
+                        <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3>Password Autofill</h3>
+                <p>Your saved passwords work instantly. No more frustrated customers. Every login method works natively.</p>
+            </div>
+
+            <!-- Card 4: Medium Wide -->
+            <div class="feature-card medium-wide reveal">
+                <div class="card-header reveal">
+                    <span class="badge badge-teal reveal">CHECKOUT +68%</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(8, 76, 88);">
+                        <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                        <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div style="max-width: 60%;"> <!-- Keeps text from overlapping background image -->
+                    <h3>Payment Autofill</h3>
+                    <p>All payment methods work perfectly - credit card autofill, Apple Pay, Google Pay, and PayPal.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="feature-card horizontal ho-1 reveal">
+                <div class="card-header reveal">
+                    <span class="badge badge-teal reveal">RETURN RATE +42%</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(8, 76, 88);">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3>Tab History</h3>
+                <p>Users can return to your site anytime via browser tabs.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="feature-card horizontal ho-2 reveal">
+                <div class="card-header reveal">
+                    <span class="badge badge-teal reveal">SPEED BOOST</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(8, 76, 88);">
+                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3>3x Faster</h3>
+                <p>Native browser performance outclasses in-app views.</p>
+            </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="my-box-btn reveal">
+            <a href="#" class="btn-primary-large">
+                Start Using Bouncy Free →
+                <div class="btn-shine"></div>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="benefits">
+    <div class="container reveal">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M208 512a24.84 24.84 0 0 1-23.34-16l-39.84-103.6a16.06 16.06 0 0 0-9.19-9.19L32 343.34a25 25 0 0 1 0-46.68l103.6-39.84a16.06 16.06 0 0 0 9.19-9.19L184.66 144a25 25 0 0 1 46.68 0l39.84 103.6a16.06 16.06 0 0 0 9.19 9.19l103 39.63a25.49 25.49 0 0 1 16.63 24.1 24.82 24.82 0 0 1-16 22.82l-103.6 39.84a16.06 16.06 0 0 0-9.19 9.19L231.34 496A24.84 24.84 0 0 1 208 512zm66.85-254.84zM88 176a14.67 14.67 0 0 1-13.69-9.4l-16.86-43.84a7.28 7.28 0 0 0-4.21-4.21L9.4 101.69a14.67 14.67 0 0 1 0-27.38l43.84-16.86a7.31 7.31 0 0 0 4.21-4.21L74.16 9.79A15 15 0 0 1 86.23.11a14.67 14.67 0 0 1 15.46 9.29l16.86 43.84a7.31 7.31 0 0 0 4.21 4.21l43.84 16.86a14.67 14.67 0 0 1 0 27.38l-43.84 16.86a7.28 7.28 0 0 0-4.21 4.21l-16.86 43.84A14.67 14.67 0 0 1 88 176zm312 80a16 16 0 0 1-14.93-10.26l-22.84-59.37a8 8 0 0 0-4.6-4.6l-59.37-22.84a16 16 0 0 1 0-29.86l59.37-22.84a8 8 0 0 0 4.6-4.6l22.67-58.95a16.45 16.45 0 0 1 13.17-10.57 16 16 0 0 1 16.86 10.15l22.84 59.37a8 8 0 0 0 4.6 4.6l59.37 22.84a16 16 0 0 1 0 29.86l-59.37 22.84a8 8 0 0 0-4.6 4.6l-22.84 59.37A16 16 0 0 1 400 256z"></path>
+                </svg>
+                Key Benefits
+            </div>
+            <h2 class="section-title section-heading">Why Choose <span class="bouncy-wrapper">
+        <svg viewBox="0 0 200 70">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Bouncy
+            </text>
+        </svg>
+    </span> </h2>
+            <p class="section-subtitle">Transform your social media traffic into real revenue with these powerful advantages</p>
+        </div>
+
+        <div class="benefits-grid reveal">
+            <!-- Card 1 -->
+            <div class="benefit-card js-benefit-card reveal">
+                <div class="icon-box reveal">
+                    <svg stroke="currentColor" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"></path></svg>
+                </div>
+                <h3>Instant Implementation</h3>
+                <p>No coding required. Setup in 30 seconds.</p>
+                <div class="extra-content">
+                    <p>Simply replace your existing links with Bouncy links. No technical knowledge needed, no code to install, no complex configurations. Works immediately with all your social profiles.</p>
+                </div>
+                <span class="benefit-stat reveal">30 second setup</span>
+                <div class="plus-icon reveal">
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="benefit-card js-benefit-card reveal">
+                <div class="icon-box reveal">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                </div>
+                <h3>Universal compatibility</h3>
+                <p>Works on all social platforms</p>
+                <div class="extra-content">
+                    <p>Compatible with Instagram, Facebook, Snapchat, Twitter, LinkedIn, Discord, Telegram, Threads, and more. One solution that works everywhere your audience is.</p>
+                </div>
+                <span class="benefit-stat reveal">30+ platforms</span>
+                <div class="plus-icon reveal">
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="benefit-card js-benefit-card reveal">
+                <div class="icon-box reveal">
+                    <svg stroke="currentColor" fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"></path></svg>
+                </div>
+                <h3>Proving ROI</h3>
+                <p>Average 47% conversion increase.</p>
+                <div class="extra-content">
+                    <p>Based on data from thousands of users, Bouncy delivers an average 47% increase in conversion rates. Most users see positive ROI within the first week.</p>
+                </div>
+                <span class="benefit-stat success reveal">+47% conversions</span>
+                <div class="plus-icon reveal">
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="benefit-card js-benefit-card reveal">
+                <div class="icon-box reveal">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <h3>Unlock Browser Features</h3>
+                <p>Password managers &amp; payments work.</p>
+                <div class="extra-content">
+                    <p>Bouncy allows users to use their saved credit cards, Apple Pay, and password managers which are usually blocked by Instagram and TikTok in-app browsers.</p>
+                </div>
+                <span class="benefit-stat reveal">100% functionality</span>
+                <div class="plus-icon reveal">
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="benefit-card js-benefit-card reveal">
+                <div class="icon-box reveal">
+                    <svg stroke="currentColor" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>
+                </div>
+                <h3>Real-Time Analytics</h3>
+                <p>Track every click and conversion.</p>
+                <div class="extra-content">
+                    <p>Deep insight into your audience. Track where they come from, what they click, and how they convert with our built-in real-time dashboard.</p>
+                </div>
+                <span class="benefit-stat reveal">15+ metrics tracked</span>
+                <div class="plus-icon reveal">
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="benefit-card js-benefit-card reveal">
+                <div class="icon-box reveal">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <h3>Enterprise Scale</h3>
+                <p>Handle millions of clicks monthly.</p>
+                <div class="extra-content">
+                    <p>Designed for creators and brands of all sizes. Our infrastructure is built to scale with your growth, ensuring 99.9% uptime during viral moments.</p>
+                </div>
+                <span class="benefit-stat reveal">99.9% uptime</span>
+                <div class="plus-icon reveal">
+                    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="proven">
+    <div class="proven-container">
+        <div class="proven-result reveal">
+            <h2>Proven Results That <span>Drive Growth</span></h2>
+            <p>Real performance improvements from thousands of creators and businesses using Bouncy to maximize their social traffic
+            </p>
+
+            <div class="proven-bar">
+                <!-- one -->
+                <div class="stat-card reveal">
+                    <div class="stat-icon-box reveal">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number reveal">
+                        <span class="counter" data-target="47" data-prefix="+" data-suffix="%">+0%</span>
+                    </div>
+                    <div class="proven-text reveal">Login Success Rate</div>
+                    <div class="proven-text-small reveal">Users complete login 47% more often with autofill</div>
+                </div>
+                <!-- two -->
+                <div class="stat-card reveal">
+                    <div class="stat-icon-box reveal">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                   <div class="stat-number reveal">
+                        <span class="counter" data-target="68" data-prefix="+" data-suffix="%">+0%</span>
+                    </div>
+                    <div class="proven-text">Checkout Completion</div>
+                    <div class="proven-text-small">Payment forms completed 68% faster</div>
+                </div>
+                <!-- three -->
+                <div class="stat-card reveal">
+                    <div class="stat-icon-box reveal">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number reveal">
+                        <span class="counter" data-target="65" data-prefix="-" data-suffix="%">-0%</span>
+                    </div>
+                    <div class="proven-text reveal">Bounce Rate Drop</div>
+                    <div class="proven-text-small reveal">Users stay engaged instead of leaving</div>
+                </div>
+                
+                <!-- four -->
+                <div class="stat-card reveal">
+                    <div class="stat-icon-box reveal">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="10" data-prefix="" data-suffix="k+">0k+</span>
+                    </div>
+                    <div class="proven-text reveal">Links Created</div>
+                    <div class="proven-text-small reveal">Deeplinks generated and optimized</div>
+                </div>
+        </div>
+        <p style="font-size: 0.85rem;">* Based on aggregated data from active Bouncy links over the last 30 days</p>
+    </div>
+</section>
+
+<section id="powerful-platform">
+    <div class="powerful-container reveal">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M208 512a24.84 24.84 0 0 1-23.34-16l-39.84-103.6a16.06 16.06 0 0 0-9.19-9.19L32 343.34a25 25 0 0 1 0-46.68l103.6-39.84a16.06 16.06 0 0 0 9.19-9.19L184.66 144a25 25 0 0 1 46.68 0l39.84 103.6a16.06 16.06 0 0 0 9.19 9.19l103 39.63a25.49 25.49 0 0 1 16.63 24.1 24.82 24.82 0 0 1-16 22.82l-103.6 39.84a16.06 16.06 0 0 0-9.19 9.19L231.34 496A24.84 24.84 0 0 1 208 512zm66.85-254.84zM88 176a14.67 14.67 0 0 1-13.69-9.4l-16.86-43.84a7.28 7.28 0 0 0-4.21-4.21L9.4 101.69a14.67 14.67 0 0 1 0-27.38l43.84-16.86a7.31 7.31 0 0 0 4.21-4.21L74.16 9.79A15 15 0 0 1 86.23.11a14.67 14.67 0 0 1 15.46 9.29l16.86 43.84a7.31 7.31 0 0 0 4.21 4.21l43.84 16.86a14.67 14.67 0 0 1 0 27.38l-43.84 16.86a7.28 7.28 0 0 0-4.21 4.21l-16.86 43.84A14.67 14.67 0 0 1 88 176zm312 80a16 16 0 0 1-14.93-10.26l-22.84-59.37a8 8 0 0 0-4.6-4.6l-59.37-22.84a16 16 0 0 1 0-29.86l59.37-22.84a8 8 0 0 0 4.6-4.6l22.67-58.95a16.45 16.45 0 0 1 13.17-10.57 16 16 0 0 1 16.86 10.15l22.84 59.37a8 8 0 0 0 4.6 4.6l59.37 22.84a16 16 0 0 1 0 29.86l-59.37 22.84a8 8 0 0 0-4.6 4.6l-22.84 59.37A16 16 0 0 1 400 256z"></path>
+                </svg>
+                Key Benefits
+            </div>
+            <h2 class="section-title">Everything You Need to<span> Grow</span></h2>
+            <p class="section-subtitle">One platform with all the tools to create, customize, and track your high-converting links</p>
+        </div>
+        <div class="powerful-box-container" reveal>
+            <img src="images/GlobalDashboard.png" alt="" width="100%">
+            <!-- one -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: rgba(8, 76, 88, 0.1);">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Custom Domains</p>
+                    <p class="pcard-text-small">Use your own brand</p>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: #f3e8ff;">
+                    <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Real Time Analytics</p>
+                    <p class="pcard-text-small">Track everything</p>
+                </div>
+            </div>
+            <!-- three -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: #ffedd5;">
+                    <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Team Collaboration</p>
+                    <p class="pcard-text-small">Share access & insights</p>
+                </div>
+            </div>
+            <!-- four -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: rgb(225,237,213)">
+                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Website Builders</p>
+                    <p class="pcard-text-small">Create stunning pages</p>
+                </div>
+            </div>
+            <!-- five -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: #dbeafe;">
+                   <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Adult content filter</p>
+                    <p class="pcard-text-small">Meta compliance ready</p>
+                </div>
+            </div>
+            <!-- six -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: #fee2e2;">
+                    <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Geo-filtering</p>
+                    <p class="pcard-text-small">Target by location</p>
+                </div>
+            </div>
+             <!-- seven -->
+            <div class="pcard-box reveal">
+                <div class="pcard-svg" style="background: #dbeafe;">
+                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"></path>
+                    </svg>
+                </div>
+                <div class="pcard-text-flex">
+                    <p class="pcard-text">Traffic Recovery</p>
+                    <p class="pcard-text-small">Recover lost visitors</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Below -->
+        <div class="reveal p-below-container">
+            <div class="p-below">
+                <div class="step-icon step-icon-teal">
+                    <svg class="w-8 h-8 text-[#084c58]" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height=1em>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                    </svg>
+                </div>
+                <h3 class="step-title">Deep Link Creation</h3>
+                <p class="step-description p-s-dec">Create smart links that escape in-app browsers instantly</p>
+            </div>
+
+            <div class="p-below">
+                <div class="step-icon step-icon-teal">
+                    <svg class="w-8 h-8 text-[#084c58]" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height="1em">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+                </div>
+                <h3 class="step-title">30+ System Domains</h3>
+                <p class="step-description p-s-dec">Choose from our domains or connect your own custom domain</p>
+            </div>
+
+            <div class="p-below">
+                <div class="step-icon step-icon-teal">
+                    <svg class="w-8 h-8 text-[#084c58]" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="1em" height=1em>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="step-title">Detailed Analytics</h3>
+                <p class="step-description p-s-dec">Track clicks, conversions, and revenue in real-time</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="review">
+    <div class="review">
+        <div class="wave-bg">
+            <svg class="wave-svg" preserveAspectRatio="none" viewBox="0 0 1200 400">
+                <defs><linearGradient id="wave-gradient-top" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#084c58" stop-opacity="0.06"></stop><stop offset="30%" stop-color="#084c58" stop-opacity="0.12"></stop><stop offset="80%" stop-color="#063a44" stop-opacity="0.20"></stop><stop offset="100%" stop-color="#084c58" stop-opacity="0.30"></stop></linearGradient></defs>
+                <path class="animate-wave-path" d="M0,80 C150,40 350,100 500,60 C650,20 850,80 1000,50 C1100,30 1200,60 1200,60 L1200,400 L0,400 Z" fill="url(#wave-gradient-top)"></path>
+            </svg>
+            <svg class="wave-svg" preserveAspectRatio="none" viewBox="0 0 1200 400">
+                <defs><linearGradient id="wave-gradient-top-2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#084c58" stop-opacity="0.04"></stop><stop offset="50%" stop-color="#063a44" stop-opacity="0.10"></stop><stop offset="100%" stop-color="#084c58" stop-opacity="0.16"></stop></linearGradient></defs>
+                <path class="animate-wave-path" d="M0,110 C200,140 400,80 600,120 C800,150 1000,90 1200,130 L1200,400 L0,400 Z" fill="url(#wave-gradient-top-2)" style="animation-delay: 2s; animation-duration: 10s;"></path>
+            </svg>
+            <svg class="wave-svg" preserveAspectRatio="none" viewBox="0 0 1200 400">
+                <defs><linearGradient id="wave-gradient-top-3" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#084c58" stop-opacity="0.02"></stop><stop offset="100%" stop-color="#063a44" stop-opacity="0.08"></stop></linearGradient></defs>
+                <path class="animate-wave-path" d="M0,70 C300,110 500,50 700,90 C900,130 1100,70 1200,110 L1200,400 L0,400 Z" fill="url(#wave-gradient-top-3)" style="animation-delay: 4s; animation-duration: 12s;"></path>
+            </svg>
+        </div>
+        <div class="review-content">
+            <div class="section-header reveal">
+                <div class="section-label">
+                    <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M208 512a24.84 24.84 0 0 1-23.34-16l-39.84-103.6a16.06 16.06 0 0 0-9.19-9.19L32 343.34a25 25 0 0 1 0-46.68l103.6-39.84a16.06 16.06 0 0 0 9.19-9.19L184.66 144a25 25 0 0 1 46.68 0l39.84 103.6a16.06 16.06 0 0 0 9.19 9.19l103 39.63a25.49 25.49 0 0 1 16.63 24.1 24.82 24.82 0 0 1-16 22.82l-103.6 39.84a16.06 16.06 0 0 0-9.19 9.19L231.34 496A24.84 24.84 0 0 1 208 512zm66.85-254.84zM88 176a14.67 14.67 0 0 1-13.69-9.4l-16.86-43.84a7.28 7.28 0 0 0-4.21-4.21L9.4 101.69a14.67 14.67 0 0 1 0-27.38l43.84-16.86a7.31 7.31 0 0 0 4.21-4.21L74.16 9.79A15 15 0 0 1 86.23.11a14.67 14.67 0 0 1 15.46 9.29l16.86 43.84a7.31 7.31 0 0 0 4.21 4.21l43.84 16.86a14.67 14.67 0 0 1 0 27.38l-43.84 16.86a7.28 7.28 0 0 0-4.21 4.21l-16.86 43.84A14.67 14.67 0 0 1 88 176zm312 80a16 16 0 0 1-14.93-10.26l-22.84-59.37a8 8 0 0 0-4.6-4.6l-59.37-22.84a16 16 0 0 1 0-29.86l59.37-22.84a8 8 0 0 0 4.6-4.6l22.67-58.95a16.45 16.45 0 0 1 13.17-10.57 16 16 0 0 1 16.86 10.15l22.84 59.37a8 8 0 0 0 4.6 4.6l59.37 22.84a16 16 0 0 1 0 29.86l-59.37 22.84a8 8 0 0 0-4.6 4.6l-22.84 59.37A16 16 0 0 1 400 256z"></path>
+                    </svg>
+                    Social Proof
+                </div>
+                <h2 class="section-title">Loved by<span> Thousands</span></h2>
+                <p class="section-subtitle">See what our users are saying about their conversion improvements</p>
+            </div>
+
+            <div class="review-carousel-wrapper">
+                <div class="review-carousel">
+                    <!-- Card 1 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"Bouncy is really having a positive influence on the conversion rate within our agency. The custom page/domain feature helps grow a brand for our models. Very affordable on scale!"</p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(135deg, #084c58 0%, #063a44 100%);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">Slava</span>
+                                <span class="user-handle">Golden Crown Agency</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"Bouncy has been a game changer for me on Twitter and Reddit. It's the only tool which can actually escape the in-app browser. Much greater conversions for my clients."</p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">Neo</span>
+                                <span class="user-handle">Internet of Bots</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"My Instagram shop conversions went up 47% in the first week! The password autofill feature is a game changer."</p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">Sarah Chen</span>
+                                <span class="user-handle">@fashionbysarah</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"No more lost sales! Apple Pay finally works from my Instagram bio. Revenue is up 68% this month."</p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(to bottom right, #a855f7, #ec4899);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">Mike Torres</span>
+                                <span class="user-handle">@mikefitness</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"Cart abandonment dropped from 70% to 25%. Bouncy literally saved my business!"</p></p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(to bottom right, #3b82f6, #06b6d4);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">Emily Rodriguez</span>
+                                <span class="user-handle">@emilycreates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"Finally! My Telegram group links work perfectly. Members can actually join without issues."</p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(135deg, #22c55e, #10b981);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">David Kim</span>
+                                <span class="user-handle">@cryptodavid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="card-text">"The difference is night and day. Login success rate went from 30% to 85%!"</p>
+                        <div class="card-footer">
+                            <div class="avatar" style="background: linear-gradient(135deg, #f97316, #ef4444);"></div>
+                            <div class="user-meta">
+                                <span class="user-name">Lisa Wang</span>
+                                <span class="user-handle">@lisadesigns</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="reveal">
+    <div class="pricing" style="text-align: center; margin-top: 60px;">
+        <div class="pricing-header">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>Choose the plan that's right for you</p>
+        </div>
+        <div class="pricing-compare">
+            <div class="saveup">
+                <span>Save up to 50%</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7"></path>
+                </svg>
+            </div>
+            <div class="pricing-switch reveal">
+                <span>Pay Monthly</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span>Pay Annually</span>
+            </div>
+            <div class="pricing-container">
+                <!-- 1. Free -->
+            <div class="pricing-card reveal">
+                <div class="card-top">
+                    <h2 class="plan-name">Free</h2>
+                    <div class="price-box">
+                        <span class="currency">$0</span><span>/mo</span>
+                    </div>
+                    <p class="plan-desc">Perfect to start</p>
+                </div>
+                    <ul class="feature-list reveal">
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>1 Active Deep Link</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>2 Basic Analytics</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Bouncy.ai Domain</span>
+                        </li>
+                         <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Standard Support</span>
+                        </li>
+                    </ul>
+            </div>
+            <!-- Solo -->
+            <div class="pricing-card reveal">
+                <div class="card-top">
+                    <h2 class="plan-name">Solo</h2>
+                    <div class="price-box">
+                        <span class="currency" id="price-solo">$8</span><span>/mo</span>
+                    </div>
+                    <p class="save-label" style="color: #86efac; font-weight: 600; font-size: 0.875rem; display: none;">Save 50%</p>
+                    <p class="plan-desc">For creators</p>
+                </div>
+                    <ul class="feature-list reveal">
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>1 Premium Link</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>1 Custom Domain</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>30+ Premium Domains</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>All Analytics Features</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Priority Support</span>
+                        </li>
+                    </ul>
+            </div>
+
+            <!-- Growth -->
+            <div class="pricing-card reveal">
+                <div class="pricing-tag">Popular</div>
+                <div class="card-top">
+                    <h2 class="plan-name">Growth</h2>
+                    <div class="price-box">
+                        <span class="currency" id="price-growth">$30</span><span>/mo</span>
+                    </div>
+                    <p class="save-label" style="color: #86efac; font-weight: 600; font-size: 0.875rem; display: none;">Save 50%</p>
+                    <p class="plan-desc">For creators & small businesses</p>
+                </div>
+                    <ul class="feature-list reveal">
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>5 Active Deep Links or Websites</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Full-Scale Analytics/Statistics</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Advanced Settings Features</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Link Cloaking</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Up to 2 Custom Domains</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Google Tag Manager + Meta Pixel</span>
+                        </li>
+                    </ul>
+            </div>
+            <!-- Scaling -->
+            <div class="pricing-card reveal">
+                <div class="pricing-tag">Best Value</div>
+                <div class="card-top">
+                    <h2 class="plan-name">Scaling</h2>
+                    <div class="price-box">
+                        <span class="currency" id="price-scaling">$75</span><span>/mo</span>
+                    </div>
+                    <p class="save-label" style="color:#86efac; font-weight: 600; font-size: 0.875rem; display: none;">Save 50%</p>
+                    <p class="plan-desc">For growing businesses & agencies</p>
+                </div>
+                    <ul class="feature-list reveal">
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>20 Active Deep Links or Websites</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Up to 5 Custom Domains</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Team Management (5 members)</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Custom Query Analytics</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Priority Support</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Everything in Growth Plan</span>
+                        </li>
+                    </ul>
+            </div>
+            <!-- Dominance -->
+            <div class="pricing-card reveal">
+                <div class="pricing-tag">Premium</div>
+                <div class="card-top">
+                    <h2 class="plan-name">Dominance</h2>
+                    <div class="price-box">
+                        <span class="currency" id="price-dominance">$150</span><span>/mo</span>
+                    </div>
+                    <!-- This group will be hidden/shown by JS -->
+                    <div id="dominance-discount-info" style="margin-top: 10px;">
+                        <p style="color: #86efac; font-weight: 600; font-size: 0.875rem; margin: 0;">Save 50%</p>
+                        <p id="yearly-total" style="font-size: 0.75rem; color: #ffffffb3; margin: 2px 0;">$900/year</p>
+                        <p id="subtext-dominance" style="font-size: 0.75rem; color: #ffffffb3; margin: 0;">$3.00/link</p>
+                    </div>
+                    <p class="plan-desc">For agencies & enterprises</p>
+                </div>
+                    <ul class="feature-list reveal">
+                        <li class="dropdown-item">
+                            <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <!-- 2. The Text Wrapper -->
+                            <span class="feature-content">
+                                <div class="dropdown-wrapper">
+                                    <div class="custom-dropdown">
+                                        <div class="dropdown-trigger" id="dropTrigger">
+                                            <span id="selectedVal">50</span>
+                                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="dropdown-menu" id="dropMenu">
+                                            <div class="drop-opt" data-value="50">50</div>
+                                            <div class="drop-opt" data-value="100">100</div>
+                                            <div class="drop-opt" data-value="150">150</div>
+                                            <div class="drop-opt" data-value="200">200</div>
+                                            <div class="drop-opt" data-value="250">250</div>
+                                            <div class="drop-opt" data-value="300">300</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                Active Deep Links or Websites
+                            </span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Up to 15 Custom Domains</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Unlimited Team Members</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Dedicated Account Manager</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Early Access to Beta Features</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>VIP Priority Support</span>
+                        </li>
+                        <li>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="1.25rem" height="1.25rem">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Everything in Scaling Plan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-btn-center">
+        <a href="https://app.bouncy.ai" class="btn-get-started">
+            <span class="btn-text">Get Started Now - It's Free →</span>
+            <div class="shine-effect"></div>
+        </a>
+        <p class="p-btn-sm">No credit card required • 1 free link forever • 
+            All plans include our core features</p>
+        <p class="p-btn-sm mt-2">No setup fees • Cancel anytime • 
+            <a class="p-btn-a" href="/contact" data-discover="true">Contact us</a> 
+            for custom enterprise solutions</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-container">
+        <div class="getting-started">
+            <h2>Need Help Getting Started?</h2>
+            <p>Book a free 30-minute onboarding call with our team. 
+            We'll help you set up your account and show you how to maximize your conversions.</p>
+            <div class="account-item">
+                <div class="round">
+                    <svg class="round-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                </div>
+                <div class="account-text">
+                    <h3>Account Setup</h3>
+                    <p>We'll help you configure your account for success</p>
+                </div>
+            </div>
+            <div class="account-item">
+                <div class="round">
+                    <svg class="round-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div class="account-text">
+                    <h3>Best Practices</h3>
+                    <p>Learn proven strategies to maximize conversions</p>
+                </div>
+            </div>
+            <div class="account-item">
+                <div class="round">
+                   <svg class="round-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <div class="account-text">
+                    <h3>Quick Start</h3>
+                    <p>Get up and running in minutes with expert guidance</p>
+                </div>
+            </div>
+                <a href="https://app.bouncy.ai" class="btn-get-started btn-contact">
+                    <span>
+                        <svg width="1.5rem" height="1.5rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    Book Your Free Call
+                    </span>
+                    <div class="shine-effect"></div>
+                </a>
+        </div>
+        <div class="onboarding">
+            <div style="text-align: center;">
+                <div class="onb-svg-box">
+                    <svg width="2.5rem" height="2.5rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.5rem;font-weight: 700;margin-bottom: 1rem;">30-Minute Onboarding Call</h3>
+                <div class="onb-content">
+                    <div class="onb-inner">
+                        <svg width="1.25rem" height="1.25rem" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>100% Free consultation</span>
+                    </div>
+                    <div class="onb-inner">
+                        <svg width="1.25rem" height="1.25rem" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>100% Free consultation</span>
+                    </div>
+                    <div class="onb-inner">
+                        <svg width="1.25rem" height="1.25rem" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>No obligation to buy</span>
+                    </div>
+                    <div class="onb-inner">
+                        <svg width="1.25rem" height="1.25rem" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Personalized setup help</span>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                    <p style="color: rgba(255, 255, 255, 0.8);font-size: 0.875rem;line-height: 1.25rem;">Flexible scheduling available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <section>
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Frequently Asked <span style="color: #084c58;">Questions</span></h2>
+                <p>Everything you need to know about Bouncy</p>
+            </div>
+            <div class="faq-grid">
+                <!-- FAQ items 1 -->
+                <div class="faq-card" id="faq1">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq1')">
+                            <span>What is Bouncy and how does it work?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Bouncy is a smart link tool that automatically redirects users from in-app browsers to their default browser, enabling password autofill and easy payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 2 -->
+                <div class="faq-card" id="faq2">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq2')">
+                            <span>Which platforms does Bouncy work with?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Works with Instagram, Facebook, Snapchat, Twitter/X, Telegram, Discord, LinkedIn, Reddit, and most
+                                     other social platforms that use in-app browsers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 3 -->
+                <div class="faq-card" id="faq3">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq3')">
+                            <span>How much will my conversions improve?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>On average, users see 47% better login rates and 68% better checkout completion. 
+                                    Some stores report up to 3x better conversion rates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 4 -->
+                <div class="faq-card" id="faq4">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq4')">
+                            <span>Do I need technical skills to use Bouncy?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Not at all! Bouncy takes just 30 seconds to set up. No coding, no complex configuration
+                                     - just create your link and add it to your bio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 5 -->
+                <div class="faq-card" id="faq5">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq5')">
+                            <span>Can I use my own custom domain?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Yes! You can connect your own domain to maintain your brand identity. 
+                                    We also offer 30+ premium system domains to choose from.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 6 -->
+                <div class="faq-card" id="faq6">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq6')">
+                            <span>Is Bouncy safe for my customers?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Absolutely. Bouncy simply redirects users to their own trusted browser. 
+                                    We don't store passwords, payment info, or any sensitive data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 7 -->
+                <div class="faq-card" id="faq7">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq7')">
+                            <span>What analytics do I get with Bouncy?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Detailed real-time analytics including clicks, conversions, device types, geographic data, 
+                                    and revenue tracking to see exactly how much you're recovering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ items 8 -->
+                <div class="faq-card" id="faq8">
+                    <div style="padding: 1.25rem;">
+                        <button class="faq-question" onclick="toggleFaq('faq8')">
+                            <span>Does Bouncy work on all devices?</span>
+                            <svg class="chevron" width="1.25rem" height="1.25rem" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-content">
+                                <p>Yes! Bouncy works seamlessly on mobile and desktop. 
+                                    Mobile users get redirected from in-app browsers, desktop users go straight through.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <p style="margin-top: 2rem; margin-bottom: 1rem;color: #4b5563;">Still have questions?</p>
+                <div class="faq-btn-container">
+                    <a href="https://app.bouncy.ai" class="btn-action btn-primary">
+                        <span class="btn-text">Get Started →</span>
+                        <div class="btn-shine"></div>
+                    </a>
+
+                    <!-- Secondary Button (White Glass) -->
+                    <a href="https://help.bouncy.ai" target="_blank" class="btn-action btn-secondary">
+                        <span class="btn-text">Contact Support</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer class="main-footer">
+    <!-- Curved Wave Top -->
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="footer-wave" width="1rem" height="1rem">
+        <path d="M0,0 L0,27.35 A600.21,600.21,0,0,0,321.39,56.44 c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39 C823.78,31,906.67,72,985.66,92.83 c70.05,18.48,146.53,26.09,214.34,3 L1200,0 Z" fill="white"></path>
+    </svg>
+
+    <div class="footer-container">
+        <!-- Logo & Tagline -->
+        <div class="footer-brand">
+            <img src="https://media.bouncy.ai/BouncyLogoWhite.png" alt="Bouncy" class="footer-logo">
+            <p class="tagline">Stop losing sales. Start converting.</p>
+        </div>
+
+        <!-- Links Grid -->
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a target="_blank" href="https://app.bouncy.ai">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/affiliates">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a target="_blank" href="https://help.bouncy.ai">Help Center</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-group">
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-instagram"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-tiktok"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-telegram"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-5 h-5 text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <p class="community-text">Join our community</p>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="footer-cta">
+            <h3>Ready to stop losing 70% of your sales?</h3>
+            <p>Join thousands of businesses recovering lost revenue with Bouncy</p>
+            <a target="_blank" href="https://app.bouncy.ai" class="btn-glass">
+                <span class="btn-content">Get Started →</span>
+                <div class="shine"></div>
+            </a>
+        </div>
+
+        <!-- Copyright & Legal -->
+        <div class="footer-bottom">
+            <div class="legal-info">
+                <span>© 2026 Bouncy.ai</span>
+                <span class="dot">•</span>
+                <span>Smart Links That Convert</span>
+            </div>
+            <div class="footer-legal-links">
+                <a href="/terms">Terms</a>
+                <a href="/privacy">Privacy</a>
+                <a target="_blank" href="https://help.bouncy.ai">Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/695826701967351981b5f96d/1je05cau4';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<script src="/bounty web-page/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>
