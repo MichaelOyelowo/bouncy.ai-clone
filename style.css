@@ -954,7 +954,7 @@ social-icons svg[viewBox="0 0 30 30"]:hover path {
 @media (max-width: 768px) {
     .steps-container {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0 30px;
         width: 100%;
     }
 }
