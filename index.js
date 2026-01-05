@@ -314,3 +314,253 @@ function toggleFaq(id) {
     });
 
 }
+
+
+// ============================================
+// COOKIE CONSENT MANAGER WITH GOOGLE CONSENT MODE V2
+// ============================================
+
+const CONSENT_STORAGE_KEY = 'cookie_consent';
+const CONSENT_COOKIE_NAME = 'cookie_consent';
+const COOKIE_EXPIRY_DAYS = 365;
+
+const DEFAULT_CONSENT = {
+  necessary: true,
+  analytics: false,
+  marketing: false,
+  preferences: false,
+};
+
+const ACCEPT_ALL_CONSENT = {
+  necessary: true,
+  analytics: true,
+  marketing: true,
+  preferences: true,
+};
+
+// ============================================
+// COOKIE HELPERS
+// ============================================
+
+function setCookie(name, value, days) {
+  const date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + encodeURIComponent(JSON.stringify(value)) + ";" + expires + ";path=/;SameSite=Lax;Secure";
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    let cookie = cookies[i].trim();
+    if (cookie.indexOf(nameEQ) === 0) {
+      try {
+        return JSON.parse(decodeURIComponent(cookie.substring(nameEQ.length)));
+      } catch (e) {
+        return null;
+      }
+    }
+  }
+  return null;
+}
+
+function deleteCookie(name) {
+  document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
+}
+
+// ============================================
+// CONSENT STORAGE (localStorage + Cookies)
+// ============================================
+
+function saveConsentToStorage(consentState) {
+  // Save to localStorage
+  try {
+    localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consentState));
+  } catch (e) {
+    console.error('Failed to save to localStorage:', e);
+  }
+  
+  // Save to cookie (for server-side access & GTM)
+  setCookie(CONSENT_COOKIE_NAME, consentState, COOKIE_EXPIRY_DAYS);
+}
+
+function loadConsentFromStorage() {
+  // Try localStorage first
+  try {
+    const stored = localStorage.getItem(CONSENT_STORAGE_KEY);
+    if (stored) {
+      return JSON.parse(stored);
+    }
+  } catch (e) {
+    console.error('Failed to load from localStorage:', e);
+  }
+  
+  // Fallback to cookie
+  const cookieConsent = getCookie(CONSENT_COOKIE_NAME);
+  if (cookieConsent) {
+    return cookieConsent;
+  }
+  
+  return null;
+}
+
+function clearConsentStorage() {
+  try {
+    localStorage.removeItem(CONSENT_STORAGE_KEY);
+  } catch (e) {}
+  deleteCookie(CONSENT_COOKIE_NAME);
+}
+
+// ============================================
+// GOOGLE CONSENT MODE V2 UPDATE
+// ============================================
+
+function updateGoogleConsent(preferences) {
+  const consentUpdate = {
+    ad_storage: preferences.marketing ? 'granted' : 'denied',
+    ad_user_data: preferences.marketing ? 'granted' : 'denied',
+    ad_personalization: preferences.marketing ? 'granted' : 'denied',
+    analytics_storage: preferences.analytics ? 'granted' : 'denied',
+    functionality_storage: preferences.preferences ? 'granted' : 'denied',
+    personalization_storage: preferences.preferences ? 'granted' : 'denied',
+    security_storage: 'granted',
+  };
+
+  if (typeof gtag === 'function') {
+    gtag('consent', 'update', consentUpdate);
+    console.log('Google Consent Mode v2 updated:', consentUpdate);
+  } else {
+    console.log('gtag not available. Consent would be:', consentUpdate);
+  }
+}
+
+// ============================================
+// SAVE CONSENT
+// ============================================
+
+function saveConsent(preferences) {
+  const consentState = {
+    hasConsented: true,
+    preferences: { ...preferences, necessary: true },
+    timestamp: new Date().toISOString(),
+  };
+  
+  saveConsentToStorage(consentState);
+  updateGoogleConsent(preferences);
+  hideBanner();
+  hideManageModal();
+}
+
+// ============================================
+// UI CONTROLS
+// ============================================
+
+function showBanner() {
+  document.querySelector('.cookie-banner').style.display = 'block';
+}
+
+function hideBanner() {
+  document.querySelector('.cookie-banner').style.display = 'none';
+}
+
+function showManageModal() {
+  const modal = document.querySelector('.consent-bg-fullscreen');
+  modal.style.opacity = '1';
+  modal.style.visibility = 'visible';
+}
+
+function hideManageModal() {
+  const modal = document.querySelector('.consent-bg-fullscreen');
+  modal.style.opacity = '0';
+  modal.style.visibility = 'hidden';
+}
+
+function updateToggleUI(preferences) {
+  const analyticsToggle = document.getElementById('analytics-toggle');
+  const marketingToggle = document.getElementById('marketing-toggle');
+  const preferencesToggle = document.getElementById('preferences-toggle');
+  
+  if (analyticsToggle) analyticsToggle.checked = preferences.analytics;
+  if (marketingToggle) marketingToggle.checked = preferences.marketing;
+  if (preferencesToggle) preferencesToggle.checked = preferences.preferences;
+}
+
+function getTogglesState() {
+  return {
+    necessary: true,
+    analytics: document.getElementById('analytics-toggle')?.checked || false,
+    marketing: document.getElementById('marketing-toggle')?.checked || false,
+    preferences: document.getElementById('preferences-toggle')?.checked || false,
+  };
+}
+
+// ============================================
+// INITIALIZATION
+// ============================================
+
+function initConsentManager() {
+  const stored = loadConsentFromStorage();
+  
+  if (stored && stored.hasConsented) {
+    // User already consented - update GTM and hide banner
+    updateGoogleConsent(stored.preferences);
+    hideBanner();
+  } else {
+    // No consent yet - show banner
+    showBanner();
+  }
+
+  // Accept All (Banner)
+  document.querySelector('.btn-accept')?.addEventListener('click', function() {
+    saveConsent(ACCEPT_ALL_CONSENT);
+  });
+
+  // Reject All (Banner)
+  document.querySelector('.btn-reject')?.addEventListener('click', function() {
+    saveConsent(DEFAULT_CONSENT);
+  });
+
+  // Manage (Banner) - opens modal
+  document.querySelector('.btn-manage')?.addEventListener('click', function() {
+    const stored = loadConsentFromStorage();
+    const currentPrefs = stored?.preferences || DEFAULT_CONSENT;
+    updateToggleUI(currentPrefs);
+    showManageModal();
+  });
+
+  // Close modal (X button)
+  document.querySelector('.consent-card-head button')?.addEventListener('click', function() {
+    hideManageModal();
+  });
+
+  // Cancel (Modal)
+  document.querySelector('.c-btn-cancel')?.addEventListener('click', function() {
+    hideManageModal();
+  });
+
+  // Save Preferences (Modal)
+  document.querySelector('.c-btn-save')?.addEventListener('click', function() {
+    const preferences = getTogglesState();
+    saveConsent(preferences);
+  });
+
+  // Accept All (Modal)
+  document.querySelector('.c-btn-accept')?.addEventListener('click', function() {
+    saveConsent(ACCEPT_ALL_CONSENT);
+  });
+
+  // Click outside modal to close
+ const overlay = document.querySelector('.bg-consent-overlay');
+  const modalBox = document.querySelector('.consent-card-container');
+
+  // 1. Only close if the background (overlay) itself is clicked
+  overlay?.addEventListener('click', function(e) {
+    if (e.target === overlay) {
+      hideManageModal();
+    }
+  });
+}
+
+// Run on DOM ready
+document.addEventListener('DOMContentLoaded', initConsentManager);

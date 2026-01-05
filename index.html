@@ -1334,6 +1334,154 @@
     </section>
 </section>
 
+<section>
+     <div class="cookie-banner">
+        <div class="cookie-banner-body">
+            <div class="cookie-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cookie">
+                    <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path><path d="M8.5 8.5v.01"></path><path d="M16 15.5v.01"></path><path d="M12 12v.01"></path><path d="M11 17v.01"></path><path d="M7 14v.01"></path>
+                </svg>
+            </div>
+            <div class="cookie-banner-content">
+                <h2>We value your privacy</h2>
+                <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our 
+                    traffic. By clicking "Accept All", you consent to our use of cookies. You can customize your preferences
+                    by clicking "Manage".
+                </p>
+            </div>
+        </div>
+        <div class="cookies-pref">
+            <button class="pref-btn btn-manage" id="manageCookies">Manage</button>
+            <button class="pref-btn btn-reject" id="rejectAll">Reject All</button>
+            <button class="pref-btn btn-accept" id="acceptAll">Accept All</button>
+        </div>
+    </div>
+
+    <div class="consent-bg-fullscreen" id="consent-bg">
+        <div class="bg-consent-overlay" id="bg-consent-overlay">
+            <div class="consent-card-container">
+                <div class="consent-card-head">
+                    <h2>Cookie Preferences</h2>
+                    <button id="consent-close-btn" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="cookies-content">
+                    <p class="m-15">Manage your cookie preferences below. You can enable or disable different types of cookies.
+                         Note that disabling some cookies may affect your experience on our website.
+                    </p>
+                    <div class="save-cookie-pref">
+                        <div class="save-c-p-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-5 w-5">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                            </svg>
+                        </div>
+                        <div class="save-cookie-container">
+                            <div class="save-cookie-inner">
+                                <h3>Strictly Necessary<span class="ml-2">(Required)</span></h3>
+                                <label class="switch-button">
+                                    <input type="checkbox" checked disabled/>
+                                    <span class="slider round" style="cursor: not-allowed;opacity: 0.6;"></span>
+                                </label>
+                            </div>
+                            <p>
+                                Essential cookies that enable core functionality like security, network management, and 
+                                accessibility. These cannot be disabled.
+                            </p>
+                            <div class="bottom-content">
+                                <span>
+                                    security_storage
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-cookie-pref">
+                        <div class="save-c-p-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column h-5 w-5">
+                                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path>
+                            </svg>
+                        </div>
+                        <div class="save-cookie-container">
+                            <div class="save-cookie-inner">
+                                <h3>Analytics</h3>
+                                <label class="switch-button">
+                                    <input type="checkbox" id="analytics-toggle"/>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <p>
+                                Help us understand how visitors interact with our website by collecting and reporting information anonymously.
+                            </p>
+                            <div class="bottom-content">
+                                <span>
+                                    analytics_storage
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="save-cookie-pref">
+                        <div class="save-c-p-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone h-5 w-5">
+                                <path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                            </svg>
+                        </div>
+                        <div class="save-cookie-container">
+                            <div class="save-cookie-inner">
+                                <h3>Marketing</h3>
+                                <label class="switch-button">
+                                    <input type="checkbox" id="marketing-toggle"/>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <p>
+                                Used to track visitors across websites to display relevant advertisements based on the visitor's interests.
+                            </p>
+                            <div class="bottom-content">
+                                <span>ad_storage</span>
+                                <span>ad_user_data</span>
+                                <span>ad_personalization</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="save-cookie-pref">
+                        <div class="save-c-p-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings2 h-5 w-5">
+                                <path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="save-cookie-container">
+                            <div class="save-cookie-inner">
+                                <h3>Preferences</h3>
+                                <label class="switch-button">
+                                    <input type="checkbox" id="preferences-toggle"/>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <p>
+                                Enable personalized features and remember your settings like language preferences and region selection.
+                            </p>
+                            <div class="bottom-content">
+                                <span>functionality_storage</span>
+                                <span>personalization_storage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="consent-btn">
+                    <button class="c-btn-cancel" id="c-btn-cancel">Cancel</button>
+                    <button class="c-btn-save">Save Preferences</button>
+                    <button class="c-btn-accept">Accept All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="main-footer">
     <!-- Curved Wave Top -->
     <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="footer-wave" width="1rem" height="1rem">
