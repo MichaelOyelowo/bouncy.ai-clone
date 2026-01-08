@@ -2869,6 +2869,20 @@ input:checked + .slides::before {
     color: #ffffff;
 }
 
+.footer-cookie-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-cookie-btn:hover {
+  color: #ffffff;
+}
 /* --- SOCIAL BUTTONS --- */
 .social-group {
     display: flex;

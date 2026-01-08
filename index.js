@@ -511,6 +511,15 @@ function initConsentManager() {
     showBanner();
   }
 
+    // Cookie Settings (Footer)
+    document.getElementById('cookie-settings-btn')?.addEventListener('click', function() {
+    const stored = loadConsentFromStorage();
+    const currentPrefs = stored?.preferences || DEFAULT_CONSENT;
+    updateToggleUI(currentPrefs);
+    showManageModal();
+    });
+
+
   // Accept All (Banner)
   document.querySelector('.btn-accept')?.addEventListener('click', function() {
     saveConsent(ACCEPT_ALL_CONSENT);
@@ -561,6 +570,8 @@ function initConsentManager() {
     }
   });
 }
+
+
 
 // Run on DOM ready
 document.addEventListener('DOMContentLoaded', initConsentManager);
